@@ -2,7 +2,7 @@
 """
 Created on 2018/1/12 - the current system date.
 
-__auther__ = 'xiaoliang'
+__auther__ = 'Rock'
 """
 import multiprocessing
 
@@ -29,8 +29,8 @@ from watson_developer_cloud.natural_language_understanding_v1 \
         import Features, EntitiesOptions, KeywordsOptions, SentimentOptions, EmotionOptions, ConceptsOptions
 
 natural_language_understanding = NaturalLanguageUnderstandingV1(
-        username='53c57af7-1ee8-44a1-a524-27d71fd9fe30',
-        password='6J1B4fZR0BdL',
+        username='your_name',
+        password='your_password',
         version='2017-02-27')
 
 engine = create_engine("mysql+pymysql://root:passw0rd@127.0.0.1:3306/CIOHackthon",
