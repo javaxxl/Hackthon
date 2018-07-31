@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Test Bootstrap Tables</title>
+
+    <!-- Must use the full version instead of slim version to issue ajax calls. -->
+    <!-- must import before bootstrap -->
+    <script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- For bootstrap -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- For bootstrap tables -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+    <!-- Latest compiled and minified Locales -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/locale/bootstrap-table-en-US.min.js"></script>
+
+    <!-- for echarts -->
+    <script src="//cdn.bootcss.com/echarts/4.0.2/echarts-en.min.js"></script>
+
+    <!-- Import personal libraries for bootstrap table first -->
+    <link rel="stylesheet" href="static/css/email-format.css">
+    <script src="static/js/email-format.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Define table -->
+    <div class="container">
+        <h1>BMTAP Email List</h1>
+        <table id="table"></table>
+    </div>
+    <!-- Load table -->
+    <script src="static/js/load-table.js"></script>
+
+    <!-- handle table events -->
+    <script src="static/js/handle-table-events.js"></script>
+    <!--<script src="static/js/highlight.js"></script>-->
+
+</body>
+
+</html>

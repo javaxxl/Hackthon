@@ -1,0 +1,10 @@
+.email-detail-div {
+    width: 400px;
+    float: left;
+}
+
+.email-echart-div {
+    width: 500px;
+    height: 300px;
+    float: right;
+}

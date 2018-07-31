@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <title>Bootstrap 实例</title>
+    <!-- 包含头部信息用于适应不同设备 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 包含 bootstrap 样式表 -->
+        <link rel="stylesheet" href="https://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!--<link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+
+    <!-- Latest compiled and minified Locales -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/locale/bootstrap-table-en-US.min.js"></script>
+
+
+
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 align="center">sentimental analyse on emails</h2>
+      <p>创建响应式表格 (将在小于768px的小型设备下水平滚动)。另外：添加交替单元格的背景色：</p>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered"
+               id="table"
+               data-toggle="table"
+               data-height="auto"
+               data-toolbar="#toolbar"
+               data-pagination="true"
+               data-search="true"
+               data-url="http://127.0.0.1:5000/emails"
+
+               data-sort-name="priority"
+               data-sort-order="asc">
+            <thead>
+            <tr>
+
+                <th data-field="priority" data-sortable="true">Priority</th>
+
+                <th data-field="subject" data-sortable="true">Subject</th>
+
+                <th data-field="sender" data-sortable="true">Sender</th>
+
+                <th data-field="senderRole" data-sortable="true">SenderRole</th>
+
+            </tr>
+            </thead>
+        </table>
+      </div>
+
+      <h2>图像</h2>
+      <p>创建响应式图片(将扩展到父元素)。 另外：图片以椭圆型展示：</p>
+      <img src="cinqueterre.jpg" class="img-responsive img-circle" alt="Cinque Terre" width="304" height="236">
+
+      <h2>图标</h2>
+      <p>插入图标:</p>
+      <p>云图标: <span class="glyphicon glyphicon-cloud"></span></p>
+      <p>信件图标: <span class="glyphicon glyphicon-envelope"></span></p>
+      <p>搜索图标: <span class="glyphicon glyphicon-search"></span></p>
+      <p>打印图标: <span class="glyphicon glyphicon-print"></span></p>
+      <p>下载图标：<span class="glyphicon glyphicon-download"></span></p>
+    </div>
+
+    <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
+    <!-- 可选: 包含 jQuery 库 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
+    <script src="https://apps.bdimg.com/libs/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
